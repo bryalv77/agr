@@ -75,6 +75,15 @@ var fkinit = {"delayTime":"3500","zIndex":"999","spinner":"spinner1","bgColor":"
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed56a4?url=http%3A%2F%2Fagr.com.ec%2F&amp;format=xml" />
 <!-- start Simple Custom CSS and JS -->
 <style type="text/css">
+.fa{
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+.media-left{
+    width: 50px !important;
+    padding-right: 0 !important;
+}
 .galarcon{
   cursor: pointer;
 }
@@ -181,13 +190,17 @@ div.owl-wrapper{
     left: 50%;
     transform: translate(-50%, -50%);;
 }
+#mainContainer{
+    display: none;
+}
 </style>
 <!-- end Simple Custom CSS and JS -->
 <!-- start Simple Custom CSS and JS -->
 <script type="text/javascript">
 jQuery(document).ready(function( $ ){
     setTimeout(()=>{
-        $('#fake-loader').fadeOut(500);;
+        $('#mainContainer').show();
+        $('#fake-loader').fadeOut(500);
     }, 2500);
   	var areasDePracticaCollection = document.getElementsByClassName('media-right');
   	var areasDePractica = Array.prototype.slice.call(areasDePracticaCollection);
@@ -264,14 +277,27 @@ p{
 }
 .post-controls{
 	display: none;
-}		</style>
-		<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1557430446147{background-image: url(wp-content/uploads/2019/05/ANTISANA-1-e155743012267916ec.jpg?id=2058) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1557381361761{background-color: #f7f7f7 !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+}		
+</style>
+        
+<style type="text/css" data-type="vc_shortcodes-custom-css">
+    .vc_custom_1557430446147{
+        background-image: url(antisana.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;background-size: cover !important;
+    }
+    .vc_custom_1557381361761{
+        background-color: #f7f7f7 !important;
+    }
+</style>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
 <body
     class="home page-template page-template-template-fullwidth page-template-template-fullwidth-php page page-id-701 wpb-js-composer js-comp-ver-4.12 vc_responsive">
 
     <div class="fake-loader" id="fake-loader">
         <img src="logo.png" alt="logo" class="fake-logo" />
     </div>
+    <div id="mainContainer">
     <div id="layout" class="layout">
         <header id="top" class="navbar js-navbar-affix">
             <div class="container" id="inicio">
@@ -419,19 +445,19 @@ p{
                                         <div class="section-body">
                                             <div class="row">
                                                 <div class="inlineBlock text-center">
-                                                    <a href="gabriela-alarcon.html"><img alt="" class="img-circle" src="wp-content/uploads/2019/04/Gabriela-Alarc%c3%b3n-Perfil-e1557426438516.jpg"></a>
+                                                    <a href="gabriela-alarcon.html"><img alt="" class="img-circle" src="galarcon.jpg"></a>
                                                     <a href="gabriela-alarcon.html"><h3>Gabriela Alarcón Gómez</h3></a>
                                                     <p>Socia </p>                                                        
                                                     <a href="https://www.linkedin.com/in/maría-gabriela-alarcón-gómez-55714ba2"><i class="fa fa-2x   fa fa-linkedin-square "></i></a>
                                                 </div>
                                                 <div class="inlineBlock text-center">
-                                                    <a href="daniela-gallegos.html" class="img-circle" src="wp-content/uploads/2019/04/DANIELA-GALLEGOS-PERFIL-e1557426426443.jpg"></a>
+                                                    <a href="daniela-gallegos.html"><img alt="" class="img-circle" src="dgallegos.jpg"></a>
                                                     <a href="daniela-gallegos.html"><h3>Daniela Gallegos Gerevasi</h3></a>
                                                     <p> Socia</p>
                                                     <a href="https://www.linkedin.com/in/daniela-gallegos-gerevasi-7004b0a8"><i class="fa fa-2x   fa fa-linkedin-square "></i></a>
                                                 </div>
                                                 <div class="inlineBlock text-center">
-                                                    <a href="mateo-ruales.html"><img alt="" class="img-circle" src="wp-content/uploads/2019/05/WhatsApp-Image-2019-05-08-at-18.14.25.jpg"></a>
+                                                    <a href="mateo-ruales.html"><img alt="" class="img-circle" src="mruales.jpeg"></a>
                                                     <a href="mateo-ruales.html"><h3>Mateo Ruales Espinosa</h3></a>
                                                     <p> Socio</p>
                                                     <a href="https://www.linkedin.com/in/mateo-ruales-espinosa-153770a3"><i class="fa fa-2x   fa fa-linkedin-square "></i></a>
@@ -456,7 +482,7 @@ p{
                                         <div class="section-body">
                                             <div class="row">
                                                 <div class="inlineBlock text-center">
-                                                    <a href="gabriela-llerena.html"><img alt="" class="img-circle" src="wp-content/uploads/2019/04/Gabriela-Llerena-PERFIL-e1557426592693.jpg"></a>
+                                                    <a href="gabriela-llerena.html"><img alt="" class="img-circle" src="gllerena.jpg"></a>
                                                     <a href="gabriela-llerena.html"><h3>Gabriela Llerena Velez</h3></a>
                                                     <p> Asociada</p>
                                                     <a href="https://www.linkedin.com/in/gabriela-llerena-vélez-97907b132"><i class="fa fa-2x   fa fa-linkedin-square "></i></a>
@@ -1218,6 +1244,7 @@ p{
     <script type='text/javascript' src='wp-includes/js/wp-embed.min3c21.js?ver=5.1.1'></script>
     <script type='text/javascript'
         src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min0147.js?ver=4.12'></script>
+    </div>
 </body>
 
 <!-- Mirrored from agr.com.ec/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Jul 2019 22:40:52 GMT -->
